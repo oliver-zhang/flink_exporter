@@ -3,7 +3,7 @@ package collector
 import (
 	log "github.com/Sirupsen/logrus"
 	simpleJson "github.com/bitly/go-simplejson"
-	"github.com/matsumana/flink_exporter/util"
+	"github.com/flink_exporter/util"
 	"strings"
 )
 
@@ -38,7 +38,6 @@ func (o *Overview) GetMetrics(flinkJobManagerUrl string) Overview {
 		log.Errorf("HttpClient.Get = %v", err)
 		return overview
 	}
-
 	// parse
 	js, err := simpleJson.NewJson([]byte(jsonStr))
 	if err != nil {

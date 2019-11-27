@@ -4,7 +4,7 @@ import (
 	"fmt"
 	log "github.com/Sirupsen/logrus"
 	simpleJson "github.com/bitly/go-simplejson"
-	"github.com/matsumana/flink_exporter/util"
+	"github.com/flink_exporter/util"
 	"strconv"
 	"strings"
 )

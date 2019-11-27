@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 	log "github.com/Sirupsen/logrus"
-	"github.com/matsumana/flink_exporter/exporter"
+	"github.com/flink_exporter/exporter"
 	"github.com/prometheus/client_golang/prometheus"
 	"gopkg.in/urfave/cli.v2"
 	"net/http"
@@ -31,7 +31,7 @@ func main() {
 		&cli.StringFlag{
 			Name:  "log-level",
 			Usage: "Set Logging level",
-			Value: "info",
+			Value: "debug",
 		},
 		&cli.IntFlag{
 			Name:  "port",
